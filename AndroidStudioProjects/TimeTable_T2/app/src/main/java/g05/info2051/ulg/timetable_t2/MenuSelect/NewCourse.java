@@ -78,18 +78,22 @@ public class NewCourse extends Activity implements View.OnTouchListener {
 
         Okay.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                String COURSE = coursename.getText().toString();
                 Intent intent = new Intent();
                 ContentValues values = new ContentValues();
-                values.put("coursename", coursename.getText().toString());
+                values.put("coursename", COURSE);
                 values.put("professor", professor.getText().toString());
                 values.put("location", location.getText().toString());
-                values.put("StartTime", Start);
-                values.put("EndTime", End);
+                values.put("StartTime", StartTime.getText().toString());
+                values.put("EndTime", EndTime.getText().toString());
                 values.put("week", week.getText().toString());
                 TimeTableDB DBTime = new TimeTableDB(getApplicationContext());
                 DBTime.insert(values);
-                intent.setClass(NewCourse.this, MainActivity.class);
-                startActivity(intent);
+
+
+                Intent ii=new Intent(NewCourse.this, MainActivity.class);
+                ii.putExtra("name", COURSE);
+                startActivity(ii);
             }
         });
 

@@ -39,6 +39,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         mList = new ArrayList<TimeTableModel>();
 
+
+
         mTimaTableView = (TimeTableView) findViewById(R.id.main_timetable_ly);
 
         addList();
@@ -50,9 +52,15 @@ public class MainActivity extends Activity {
 
 
     private void addList() {
+        Intent iin= getIntent();
+        Bundle b = iin.getExtras();
+        if(b!=null) {
+            String j = (String) b.get("name");
 
-        mList.add(new TimeTableModel(0, 3, 4, 1, "8:20", "10:10", "审计实务",
-                "李老师", "2"));
+
+            mList.add(new TimeTableModel(0, 3, 4, 1, "8:20", "10:10", j,
+                    "李老师", "2"));
+        }
         mList.add(new TimeTableModel(0, 6, 7, 1, "8:20", "10:10", "市场营销实务",
                 "王", "3"));
         mList.add(new TimeTableModel(0, 6, 7, 2, "8:20", "10:10", "财务管理实务",
