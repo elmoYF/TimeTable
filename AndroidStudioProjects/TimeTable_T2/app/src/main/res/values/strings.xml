@@ -1,0 +1,25 @@
+<resources>
+
+    <string name="app_name">My Timetable_2</string>
+    <string name="action_settings">New Course</string>
+    <string name="calender">Calender</string>
+    <string name="quit">QUIT</string>
+    <string name="shot">Shot Screen</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="empty"></string>
+    <string name="mon">Mon.</string>
+    <string name="tue">Tue.</string>
+    <string name="wen">Wed.</string>
+    <string name="thu">Thu.</string>
+    <string name="fri">Fri.</string>
+    <string name="sta">Sat.</string>
+    <string name="sun">Sun.</string>
+    <string name="ADDNC">Add New Cousre </string>
+    <string name="calander_add">You can add a new project, exam and event in your Calender.</string>
+    <string name="input">Please input...</string>
+    <string name="databs">New Project</string>
+    <string name="databsexam">New Exam</string>
+    <string name="pick_time1">Time From</string>
+    <string name="pick_time2">Time To</string>
+    <string name="message">Message</string>
+</resources>

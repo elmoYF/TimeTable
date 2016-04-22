@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/btnok"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/TimeFrom" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANCLE"
+        android:id="@+id/btncancle"
+        android:layout_marginLeft="71dp"
+        android:layout_marginStart="71dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/csnm" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Course Name :"
+        android:id="@+id/csnm"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="36dip"
+        android:background="@drawable/editview_bg"
+        android:padding="5dip"
+        android:textColorHint="#AAAAAA"
+        android:textSize="15dip"
+        android:singleLine="true"
+        android:hint="@string/input"
+        android:layout_below="@+id/csnm"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editText_CourseName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ClassRoom :"
+        android:id="@+id/classrom"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/editText_CourseName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/editText_classroom"
+        android:layout_width="fill_parent"
+        android:layout_height="36dip"
+        android:background="@drawable/editview_bg"
+        android:padding="5dip"
+        android:textColorHint="#AAAAAA"
+        android:textSize="15dip"
+        android:singleLine="true"
+        android:hint="@string/input"
+        android:layout_below="@+id/classrom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Professor : "
+        android:id="@+id/Proname"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/editText_classroom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+
+        android:id="@+id/editText_prof"
+        android:layout_width="fill_parent"
+        android:layout_height="36dip"
+        android:background="@drawable/editview_bg"
+        android:padding="5dip"
+        android:textColorHint="#AAAAAA"
+        android:textSize="15dip"
+        android:singleLine="true"
+        android:hint="@string/input"
+        android:layout_below="@+id/Proname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Time From : "
+        android:id="@+id/TimeFrom"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/editText_prof"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+
+        android:id="@+id/TimeFromedit"
+        android:layout_width="fill_parent"
+        android:layout_height="36dip"
+        android:background="@drawable/editview_bg"
+        android:padding="5dip"
+        android:textColorHint="#AAAAAA"
+        android:textSize="15dip"
+        android:singleLine="true"
+        android:hint="@string/input"
+        android:layout_below="@+id/TimeFrom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/btncancle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Time To : "
+        android:id="@+id/TimeTo"
+        android:layout_alignTop="@+id/TimeFrom"
+        android:layout_alignStart="@+id/TimeToedit" />
+
+    <EditText
+
+        android:id="@+id/TimeToedit"
+        android:layout_width="fill_parent"
+        android:layout_height="36dip"
+        android:background="@drawable/editview_bg"
+        android:padding="5dip"
+        android:textColorHint="#AAAAAA"
+        android:textSize="15dip"
+        android:singleLine="true"
+        android:hint="@string/input"
+        android:layout_below="@+id/TimeTo"
+        android:layout_alignStart="@+id/btncancle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Week :"
+        android:id="@+id/week"
+        android:layout_below="@+id/TimeFromedit"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="36dip"
+        android:background="@drawable/editview_bg"
+        android:padding="5dip"
+        android:textColorHint="#AAAAAA"
+        android:textSize="15dip"
+        android:singleLine="true"
+        android:hint="@string/input"
+        android:id="@+id/editText_week"
+        android:layout_below="@+id/week"
+        android:layout_alignParentStart="true" />
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/main_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="false"
+        >
+
+        <g05.info2051.ulg.timetable_t2.CourseTable.TimeTableView
+            android:id="@+id/main_timetable_ly"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+        </g05.info2051.ulg.timetable_t2.CourseTable.TimeTableView>
+    </ScrollView>
+
+</LinearLayout>
